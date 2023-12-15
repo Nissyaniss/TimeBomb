@@ -16,8 +16,22 @@ html {
 	align-items: center;
 }
 
-#joinGame {
+#createGame {
 	margin-top: 30px;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+hr {
+	height: 40px;
+	width: 100%;
+}
+
+#joinGame {
 	font-size: 20px;
 	display: flex;
 	justify-content: center;
@@ -28,12 +42,15 @@ html {
 #inputCode {
 	font-size:x-large;
 	text-align: center;
-	width: 1px;
+	margin-bottom: 20px;
+}
+
+.pseudo {
+	margin-bottom: 20px;
 }
 
 header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
