@@ -14,13 +14,13 @@
 		<img src="img/logo.png" height="500px" alt="logo">
 	</header>
 	<div id="gameMenu">
-		<form id="createGame" action="/create" method="get">
+		<form id="createGame" action="/lobby/create" method="get">
 			<input type="text" name="name" required maxlength="15" class="pseudo form-control" placeholder="Pseudo"
 				aria-describedby="addon-wrapping">
 			<input type="submit" class="btn btn-primary btn-lg" value="Create Game">
 		</form>
 		<hr />
-		<form id="joinGame" action="/join" method="get">
+		<form id="joinGame" action="/lobby/join" method="get">
 			<div class="form-group">
 				<input type="text" name="name" required maxlength="15" class="pseudo form-control" placeholder="Pseudo"
 					aria-describedby="addon-wrapping">

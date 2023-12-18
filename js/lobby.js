@@ -1,5 +1,5 @@
-const EventSrc = new EventSource('/events');
-EventSrc.addEventListener('init', function(e) {
+const EventSrc = new EventSource('/lobby/events');
+EventSrc.addEventListener('init', function (e) {
 	const data = JSON.parse(e.data);
 	document.getElementsByTagName('title')[0].innerHTML = data.lobby;
 	document.getElementById('playerList.Code').innerHTML = data.lobby;
@@ -24,7 +24,7 @@ EventSrc.addEventListener('init', function(e) {
 	}
 });
 
-EventSrc.addEventListener('join', function(e) {
+EventSrc.addEventListener('join', function (e) {
 	const data = JSON.parse(e.data);
 	console.log(Object.keys(players).length);
 	if (data.player.id in players) {
@@ -45,7 +45,7 @@ EventSrc.addEventListener('join', function(e) {
 	}
 });
 
-EventSrc.addEventListener('leave', function(e) {
+EventSrc.addEventListener('leave', function (e) {
 	const data = JSON.parse(e.data);
 	if (!(data.player in players)) {
 		return;
