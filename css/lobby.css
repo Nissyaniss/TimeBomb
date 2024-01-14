@@ -32,6 +32,14 @@ main {
 	margin-top: -125%;
 }
 
+#readyButton {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 #startButton {
 	margin-top: 50px;
 	display: flex;
@@ -40,6 +48,15 @@ main {
 	align-items: center;
 }
 
+.unready {
+	color : #ff0000;
+}
+
+.ready {
+	color : #00ff00;
+}
+
 footer {
 	margin-left: 25px;
 }
+
